@@ -23,7 +23,7 @@ main {
 }
 
 #layout {
-    display: flex; 
+    display: flex;
     justify-content: space-between; 
     align-items: flex-start; 
     width: 90%;
@@ -32,7 +32,7 @@ main {
 }
 
 #texto, #video, #login {
-    width: 30%; 
+    flex: 1;
     background-color: #f9f9f9;
     padding: 10px;
     border: 1px solid #ccc;
@@ -52,16 +52,20 @@ main {
     height: auto;
 }
 
+#login {
+    text-align: center;
+}
+
 #login form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin-bottom: 10px;
 }
 
 .logos {
     display: flex;
     justify-content: space-around;
-    margin-top: 10px;
 }
 
 .logos img {
