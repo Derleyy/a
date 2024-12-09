@@ -1,62 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout - Atividade 3</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Exercício</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Title</h1>
-    </header>
-
-    <section id="banner">
-        <img src="banner.jpg" alt="Banner 468x60" width="468" height="60">
-    </section>
 
     <main>
-        <div id="layout">
-            
-            <section id="texto">
+        <section class="title-banner">
+            <h1 class="title">Title</h1>
+            <img src="banner.jpg" alt="Banner 468x60" class="banner">
+        </section>
+
+        <section class="content">
+    
+            <article class="text-section">
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-            </section>
+            </article>
 
-            <section id="video">
-                <video controls>
-                    <source src="" type="video/mp4">
-                    Seu navegador não suporta vídeos HTML5.
-                </video>
-                <p>Lista 01. Disciplina Programação Web I.</p>
-            </section>
-
-            <aside id="login">
+            <aside class="login-section">
                 <form>
                     <label for="usuario">Usuário:</label>
-                    <input type="text" id="usuario" name="usuario">
-
+                    <input type="text" id="usuario" name="usuario"><br>
                     <label for="senha">Senha:</label>
-                    <input type="password" id="senha" name="senha">
-
-                    <div>
-                        <input type="checkbox" id="lembrar" name="lembrar">
-                        <label for="lembrar">Lembrar?</label>
-                    </div>
-
+                    <input type="password" id="senha" name="senha"><br>
+                    <input type="checkbox" id="lembrar">
+                    <label for="lembrar">Lembrar?</label><br>
                     <button type="submit">Enviar</button>
                 </form>
                 <div class="logos">
-                    <img src="ifce.jpg" alt="Logo 1">
-                    <img src="ufc.png" alt="Logo 2">
+                    <img src="ufc-logo.png" alt="UFC Logo" class="logo">
+                    <img src="another-logo.png" alt="Outro Logo" class="logo">
                 </div>
             </aside>
-        </div>
+        </section>
     </main>
 
     <footer>
-        <p>Connected</p>
+        <span>Lista 01. Disciplina Programação Web I.</span>
+        <span class="status">Connected</span>
     </footer>
 </body>
 </html>
