@@ -23,48 +23,51 @@ main {
 }
 
 #layout {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
     width: 90%;
-    gap: 20px;
+    margin: 20px auto;
+    gap: 20px; 
+}
+
+#texto, #video, #login {
+    width: 30%; 
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 #texto {
-    width: 30%;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ccc;
+    text-align: justify;
 }
 
 #video {
-    width: 30%;
     text-align: center;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ccc;
 }
 
-#login {
-    width: 30%;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ccc;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+#video video {
+    width: 100%; 
+    height: auto;
 }
 
 #login form {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .logos {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+}
+
+.logos img {
+    width: 50px; 
+    height: auto;
+    object-fit: contain;
 }
 
 footer {
